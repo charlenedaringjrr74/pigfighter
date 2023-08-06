@@ -90,6 +90,20 @@
     </div>
     </div>
 
+    <script>
+        
+        var gitalk = new Gitalk({
+            clientID: '4dc54b587bc1dbfe2535',
+            clientSecret: '05b8a9e70fd26c6aa2d2b7733a6258bb5dc75133',
+            repo: 'pigfighter',
+            owner: 'charlenedaringjrr74',
+            admin: ['charlenedaringjrr74'],
+            id: location.pathname,      // Ensure uniqueness and length less than 50
+            distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    </script>
 
 </body>
     <script>
